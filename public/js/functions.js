@@ -1,8 +1,10 @@
 $(document).ready(function () {
+  console.log("Hello World");
   /* When clicking on any favorite icon
       the icon swaps from empty to filled
       and image url is added/deleted to the database*/
   $(".favoriteIcon").on("click", function () {
+    console.log("click");
     let queryString = window.location.search;
     let urlParams = new URLSearchParams(queryString);
     let keyword = urlParams.get("keyword");
