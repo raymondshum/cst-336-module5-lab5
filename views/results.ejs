@@ -1,4 +1,6 @@
 <%- include("partials/header.ejs") %>
+<body>
+  <main>
     <h1>Cool Images</h1>
     <form action="/search">
       <input type="text" placeholder="Type keyword" name="keyword" />
@@ -14,4 +16,6 @@
         <img class="favoriteIcon" src="/img/favorite.png" width="20" />
       <% } %>
     </div>
+  </main>
+</body>
 <%- include("partials/footer.ejs") %>
