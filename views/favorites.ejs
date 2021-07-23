@@ -5,22 +5,26 @@
     background-size:auto;
   }
 </style>
-<div id="favContainer">
+<div id="favContainer" class="hero">
   <a href="/">Back to Search</a>
   
   <h1>Favorite Pics</h1>
   
   <% for (let i = 0; i < rows.length; i++) { %>
   
-    <a class="keywordLink" href="#">
+    <button class="btn btn-primary"><a class="keywordLink" href="#">
       <%= rows[i].keyword %>
-    </a>
+    </a></button>
   
     <%- ((i+1) % 6 == 0) ? '<br><br>':'' %>
   <% }; %>
+
+  <br><br>
+
+  <div id="favorites"></div>
 </div>
 
-<div id="favorites"></div>
+
 <input type="hidden" id="keywordSelected">
 
 <%- include('partials/footer.ejs') %>

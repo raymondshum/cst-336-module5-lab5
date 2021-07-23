@@ -1,6 +1,6 @@
 <%- include("partials/header.ejs") %>
 
-<div>
+<div class="hero">
   <h1>Cool Images</h1>
   <form action="/search">
     <input
@@ -11,7 +11,8 @@
     />
     <br /><br />
     <button class="btn btn-primary">Search</button>
-    <br /><a id="favLink" href="/getKeywords"> See Favorites</a>
+    <br /><br />
+    <div id="links"><a id="favLink" href="/getKeywords"> See Favorites</a></div>
   </form>
   <hr />
   <div id="resultsContainer">

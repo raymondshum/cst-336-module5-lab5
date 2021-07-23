@@ -28,6 +28,9 @@ $(document).ready(function () {
     let htmlString = "";
     for (let i = 0; i < data.length; i++) {
       console.log(`DEBUG ${data[i].imageURL}`);
+      if(i%3==0){
+        htmlString +='<br>';
+      }
       htmlString += `<img class='image' src="${data[i].imageURL}" width="200" height="200">`;
       htmlString += "<img class='favoriteIcon' src='img/favorite_on.png' width='20'>";
     }
