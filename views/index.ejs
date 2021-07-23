@@ -1,12 +1,13 @@
 <%- include("partials/header.ejs") %>
-<body>
-  <main>
-    <h1>Cool Images</h1>
-    <form action="/search">
-      <input type="text" placeholder="Type keyword" name="keyword" />
-      <br /><br />
-      <button>Search</button>
-    </form>
-  </main>
-</body>
+
+    <div class="jumbotron p-5">
+      <h1 class="display-4">Cool Images</h1>
+      <br>
+      <form action="/search">
+        <input class="form-control" type="text" placeholder="Type keyword" name="keyword" />
+        <br />
+        <button class="btn btn-primary">Search</button>
+      </form>
+    </div>
+
 <%- include("partials/footer.ejs") %>
