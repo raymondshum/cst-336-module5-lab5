@@ -1,23 +1,26 @@
 <%- include("partials/header.ejs") %>
-<body>
-  <main>
-    <div class="jumbotron">
-      <h1>Cool Images</h1>
-      <form action="/search">
-        <input type="text" placeholder="Type keyword" name="keyword" />
-        <br /><br />
-        <button>Search</button>
-        <br><a id="favLink" href="/getKeywords"> See Favorites</a>
-      </form>
-      <hr />
-      <div id="resultsContainer">
-        <% for (let i=0; i< imageUrlArray.length; i++){ %>
-          <%- (i%3==0)? "<br />" : "" %>
-          <img class="image" src="<%= imageUrlArray[i] %>" width="200" height="200" />
-          <img class="favoriteIcon" src="/img/favorite.png" width="20" />
-        <% } %>
-      </div>
-    </div>
-  </main>
-</body>
+
+<div>
+  <h1>Cool Images</h1>
+  <form action="/search">
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Type keyword"
+      name="keyword"
+    />
+    <br /><br />
+    <button class="btn btn-primary">Search</button>
+    <br /><a id="favLink" href="/getKeywords"> See Favorites</a>
+  </form>
+  <hr />
+  <div id="resultsContainer">
+    <% for (let i=0; i< imageUrlArray.length; i++){ %> <%- (i%3==0)? "<br />" :
+    "" %>
+    <img class="image" src="<%= imageUrlArray[i] %>" width="200" height="200" />
+    <img class="favoriteIcon" src="/img/favorite.png" width="20" />
+    <% } %>
+  </div>
+</div>
+
 <%- include("partials/footer.ejs") %>
