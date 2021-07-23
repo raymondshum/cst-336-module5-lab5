@@ -12,21 +12,22 @@
 
 ---
 
-## _Lab 4: Express (Solar System)_
+## _Lab 5: Image Search with Favorites_
 
 Placeholder: link to website.
 
 ### **Objective:**
 
-> 
+> To create a website that communicates with an existing external API and allows
+the user to view and modify records in a local MySQL database.
 
 ### **Project Description:**
 
-> 
+> This is an image search website that allows a user to search for images using
+the Unsplash API. They can add images to a local MySQL database by favoriting them. The image URLs are retrieved by keyword, which are displayed to the user. Selecting a keyword displays the favorite images associated with it.
 
 ### **Tutorial Learning Outcomes**
 > Gain proficiency in the following:
-
 - Node / Express
 - Web API
 - Fetch API
