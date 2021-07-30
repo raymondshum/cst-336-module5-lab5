@@ -14,7 +14,7 @@
 
 ## _Lab 5: Image Search with Favorites_
 
-[![Run on Repl.it](https://repl.it/badge/github/raymondshum/cst336-module5-lab5)](https://cst336-module5-hw5.raymondshum.repl.co/)
+[![Run on Repl.it](https://repl.it/badge/github/raymondshum/cst336-module5-lab5)](https://replit.com/@raymondshum/cst-336-module5-lab5)
 
 ### **Objective:**
 
