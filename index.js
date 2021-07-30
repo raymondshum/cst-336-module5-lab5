@@ -2,7 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const app = express();
 const fetch = require("node-fetch");
-const pool = require("./dbPool.js");
+const pool = require("./dbpool.js");
 
 const apiKey = process.env.API_KEY;
 
